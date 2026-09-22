@@ -15,4 +15,7 @@ def test_walk_books_dormancy_refusal_on_poor_plateau():
     dormancies = [r for r in rows if r.get("reason") == "boredom_dormancy"]
     assert len(dormancies) == 1
     assert dormancies[0]["genome_hash"] == g.genome_id
-    assert hunter.dormant
+    assert not any(r["kind"] == "FINDING/v1" for r in rows)
+    # after booking dormancy the dice may wake the hunter; it then dies
+    # honestly (starvation) rather than fabricating a finding — both
+    # terminal states are REFUSAL rows on the chain.
