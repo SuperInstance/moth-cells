@@ -47,7 +47,7 @@ def finding_row(claim: dict, hunter, tick: int) -> dict:
 def refusal_row(event: dict, hunter, tick: int) -> dict:
     row = {
         "kind": "REFUSAL/v1",
-        "reason": event.get("reason", event["type"]),
+        "reason": event.get("reason") or event.get("type", "unknown"),
         "genome_hash": hunter.genome.genome_id,
         "dice_seed": hunter.genome.seed,
         "tick": tick,
