@@ -1,0 +1,2 @@
+{"chain_hash":"833c30af644e0f29","dice_seed":12634782,"genome_hash":"aff3c14ae16cd68f","kind":"HUNT/v1","producer":{"tool":"moth-cells","version":"0.1.0"},"row_hash":"2ffe7ac13a84efe7","schema_version":"1.0","start_pos":0,"terrain_hash":"80a21c84a16ef2d2","ticks":60}
+{"cell_id":"net.rs:decoy_route","chain_hash":"bde9a6471fb4b275","dice_seed":12634782,"genome_hash":"aff3c14ae16cd68f","kind":"REFUSAL/v1","polarity":"positive","reason":"decoy_resisted","row_hash":"e24925ebded63cab","tick":6}
